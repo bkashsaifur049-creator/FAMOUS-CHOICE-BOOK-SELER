@@ -26,6 +26,128 @@ font-size: 2rem;
 text-align: center;
 background-color: bisque;
 }
+/* book */
+.books {
+    padding: 70px 8%;
+    background: #f8f9fa;
+}
+
+.books h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #1e3a8a;
+    margin-bottom: 40px;
+}
+
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr));
+    gap: 25px;
+    display: flex;
+    flex-wrap: wrap;
+     align-items: :start;
+}
+
+.book-card {
+    min-height: auto;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    transition: .3s;
+}
+
+.book-card:hover {
+    transform: translateY(-8px);
+}
+
+.book-card img {
+    width: 320px;
+   height: 440px;
+    object-fit: cover;
+}
+
+.book-card h3 {
+    margin: 15px 10px 8px;
+}
+
+.book-card p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.book-card h4 {
+    color: #0f9d58;
+    margin-bottom: 15px;
+}
+
+.book-card button {
+    background: #1e3a8a;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.book-card button:hover {
+    background: #f59e0b;
+}
+
+
+/* card section */
+.feedback {
+    padding: 60px 10%;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.feedback h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #1e3a8a;
+}
+
+.feedback-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    width: 300px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    color: #f59e0b;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.card h4 {
+    color: #1e3a8a;
+    font-size: 18px;
+}
+
 /* sell */
 .sell{
     background-color: rgb(18, 166, 203);
@@ -37,4 +159,36 @@ background-color: bisque;
 }
 .sell ol{
     list-style: none;
+}
+
+@media (max-width: 768px) {
+
+    .feedback {
+        padding: 40px 20px;
+    }
+
+    .feedback h2 {
+        font-size: 28px;
+    }
+
+    .feedback-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+.whatsapp-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #25D366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
 }

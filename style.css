@@ -1,31 +1,68 @@
 /* logo */
 .logo{
     display: flex;
-    gap: 300px;
-    margin: 62px;
+    gap: 10px;
+    width: 100%;
+    margin: 5px;
     box-shadow: 0 2px 2px cornflowerblue;
+    flex-wrap: wrap;
 }
 .logo h2{
-    font-size: 2.7rem;
+    text-align: center;
+    margin-left: 7%;
+    font-size: 3rem;
     color: rgb(160, 8, 194)5, 243, 196)5, 243, 196)5, 243, 196);
 }
 .logo button{
     margin-top: 65px;
-    margin-right: 10px;
-width: 200px;
+    margin-right: 5px;
+    margin-left: 25%;
+    
+width: 150;
 height: 50px;
+text-align: center;
 border-radius: 10px;
 
 background-color: rgb(236, 81, 81);
 font-size: 1.4rem;
 color: aliceblue;
 }
+.logo button:hover{
+    color: rgb(224, 172, 108);
+}
 /* img */
 .img p{
+    width: 100%;
 font-size: 2rem;
 text-align: center;
 background-color: bisque;
 }
+.whatsapp-btn{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #25D366;
+    color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 70px 80px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+.whatsapp-btn:hover{
+    color: #3d96da;
+}
+.facebook{
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+    }
 /* book */
 .books {
     padding: 70px 8%;
@@ -191,4 +228,38 @@ background-color: bisque;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
+}
+.facebook{
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+}
+
+.facebook h2{
+    color: #1877F2;
+    margin-bottom: 10px;
+}
+
+.facebook p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.facebook button{
+    background: #1877F2;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.facebook button:hover{
+    background: #145dbf;
 }
